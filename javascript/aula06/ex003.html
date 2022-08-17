@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa...</title>
+    <style>
+        body{
+            background-color: rgb(105, 105, 173);
+            color: white;
+            font: normal 20pt Arial;
+        }
+        h1{
+            color: gold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>Já me livrei da maldição!!</p>
+    <script>
+        var n1 = Number.parseFloat (window.prompt('Digite o primeiro número:')); // Conversão de String > Number de forma mais completa
+        var n2 = Number(window.prompt("Digite o segundo número:")); //Conversão de String > Number o JS vai escolher automaticamente o tipo.
+        var total = n1 + n2;
+        window.alert('A soma dos valores é igual a: '+total+".");
+    </script>
+</body>
+</html>
