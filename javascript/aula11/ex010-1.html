@@ -1,0 +1,35 @@
+<!-- Replicar o ex009 com entradas do usuario -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imigração</title>
+</head>
+<body>
+    <h1>Checando nacionalidades</h1>
+    Pais você mora: <input type="text" name="txpais" id="txpais">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res"></div>
+
+    <script>
+        function verificar(){
+            var tpais = window.document.getElementById('txpais')
+            var res = window.document.getElementById('res')
+            var pais = tpais.value
+
+            res.innerHTML = `Você mora no(a) <strong>${pais}</strong> e `
+            if(pais =='Brasil' || pais=='brasil' ){
+                res.innerHTML += `vocé é um(a) brasileiro(a)!`
+            }
+            else{
+                res.innerHTML += `vocé é estrangeiro(a)!`
+            }
+
+        }
+        
+    </script>
+</body>    
+</html>
