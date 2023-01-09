@@ -13,7 +13,7 @@ function isNumero(n){
 }
 
 function inLista(n, l){
-    if(l.indexOf(Number(n)) != 1){
+    if(l.indexOf(Number(n)) != -1){
         return true
     }
     else{
@@ -23,7 +23,7 @@ function inLista(n, l){
 
 function adicionar(){
     if(isNumero(num.value) && !inLista(num.value, valores)){
-        window.alert('OK')
+        
     }
     else{
         window.alert('Valor inválido ou ja encontrado na lista.')
